@@ -4,6 +4,7 @@
 
 import os 
 import shutil
+import json 
 
 class bcolors:
     HEADER = '\033[95m'
@@ -21,7 +22,7 @@ with open ('last_used.txt', 'r') as f:
         
 with open ('firmbuild_mode.txt', 'r') as f: 
     mode = f.readline()
-    
+
 
     
 print("\nConfigure Firmware Build:")

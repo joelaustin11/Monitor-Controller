@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "Monitor-Controller",
+			"path": ".."
+		},
+		{
+			"name": "pico-sdk",
+			"path": "../../../pico/pico-sdk"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"ssd1306.h": "c"
+		}
+	}
+}
