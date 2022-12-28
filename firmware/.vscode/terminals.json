@@ -1,0 +1,35 @@
+{
+  "autorun": true, 
+  "autokill": true,
+  "env": { "name": "value" }, 
+  "terminals": [ 
+    { 
+
+      "name": "Firmware", 
+      "description": "Base Firmware Terminal", 
+      "icon": "circuit-board", 
+      "color": "terminal.ansiGreen", 
+      "cwd": "/mnt/d/Electronics/Monitor Controller/Monitor-Controller-Firmware/firmware", 
+      "command": "", 
+      "commands": [ 
+      ]
+
+      
+
+    },
+    { 
+
+    "name": "Pico SDK", 
+    "description": "Terminal for pico-sdk", 
+    "icon": "list-ordered", 
+    "color": "terminal.ansiGreen", 
+    "cwd": "/mnt/d/Electronics/pico/pico-sdk", 
+    "command": "", 
+    "commands": [ 
+    ]
+
+    
+
+  }
+  ]
+}

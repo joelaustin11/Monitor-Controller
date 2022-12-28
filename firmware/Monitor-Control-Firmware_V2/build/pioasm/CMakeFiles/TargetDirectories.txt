@@ -1,0 +1,3 @@
+/mnt/d/Electronics/Monitor Controller/Monitor-Controller-Firmware/firmware/Monitor-Control-Firmware_V2/build/pioasm/CMakeFiles/pioasm.dir
+/mnt/d/Electronics/Monitor Controller/Monitor-Controller-Firmware/firmware/Monitor-Control-Firmware_V2/build/pioasm/CMakeFiles/edit_cache.dir
+/mnt/d/Electronics/Monitor Controller/Monitor-Controller-Firmware/firmware/Monitor-Control-Firmware_V2/build/pioasm/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,49 @@
+; Program to output bits of data to a pin
+
+; Set program name for use of pio_add_program
+.program PGA2310
+
+.side_set 1 opt
+    ; begin main block 
+    
+main: ; Main "Stall block" 
+
+    
+    pull ifempty ; Pulls from TxFIFO if it contains data, stalls if it is empty
+    set pins, 1 ; CS pin high as a default 
+    jmp !OSRE, data ; Jumps to data transfer if the OSR contains data
+
+data: ; Data transfer section
+    set pins, 0  ; CS low to select chip and SCLK to low
+    set y, 15 ; set y register with increment number 
+
+bitloop: ; Loops output and clock cycles
+    nop     side 0 [0]
+    out pins, 1 ; one bit from OSR to SDI pin
+    nop     side 1 [0]
+    jmp y--, bitloop ; if y is 0 before decrement then loop
+
+bitend: ; Return to stalled state
+    set pins, 1 ; CS back high at end of word
+    jmp main ; back to top of program
+
+
+
+
+%c-sdk { 
+// Helper frunction for pin configuration
+void PGA2310_program_init(PIO pio, uint sm, uint offset, uint setpin, uint outpin, uint sidesetpin)
+{
+    pio_gpio_init(pio, outpin); // Sets the GPIO pin
+    pio_sm_config c = PGA2310_program_get_default_config(offset) ; //stores inside c
+    sm_config_set_set_pins(&c, setpin, 1); // Sets the set pin and number of pins
+    sm_config_set_out_pins(&c, outpin, 1); // Sets the out pin and number of pins
+    sm_config_set_sideset_pins(&c, sidesetpin); // Sets the sideset pin
+    sm_config_set_out_shift(&c, false, false, 16); // Sets the OSR shift direction, autopull, and the number of 
+                                                // bits to be shifted before OSR is topped up automatically
+    sm_config_set_sideset(&c, 1, false, false); // Further configuration of sideset behaviour
+    pio_sm_init(pio, sm, offset, &c); 
+
+}
+%} 
+
