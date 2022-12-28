@@ -9,7 +9,7 @@ while exist == False:
     if os.path.exists("/mnt/e") == True: 
         exist = True 
         print("Pico Detected")
-    else: 
+    else:           g
         print("No Pico Detected")
         
         
