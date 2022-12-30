@@ -28,8 +28,8 @@ int main() {
     vu_setup(0); 
 
     while (true) {
-        int volts = vu_calc(); 
-        meter_display(&disp, volts);
+        meter_display(&disp, 55); 
+        
     }
     
 }
