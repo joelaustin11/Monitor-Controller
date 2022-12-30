@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/mnt/d/Electronics/pico/pico-sdk")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/mnt/d/Electronics/Monitor Controller/Monitor-Controller-Firmware/firmware/ssd1306_test/build")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/mnt/d/Electronics/Monitor-Controller-Firmware/Monitor-Controller/firmware/ssd1306_test/build")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

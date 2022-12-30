@@ -2,6 +2,8 @@
 #include "ssd1306.h"
 
 
+// Function prototypes only for this .c file
+
 
 
 void setup_gpios(void) {
@@ -12,21 +14,14 @@ void setup_gpios(void) {
     gpio_pull_up(3);
 }
 
-void vu_display(int volts, char value) { 
+void meter_display(ssd1306_t *disp, int level) { 
+    ssd1306_draw_square(disp, 0, 0, level, 64); 
+    ssd1306_show(disp); 
+}
 
-    // setup display
-    ssd1306_t disp;
-    disp.external_vcc=false;
-    ssd1306_init(&disp, 128, 64, 0x3C, i2c1);
-    ssd1306_clear(&disp);
-    int dummy; 
-    dummy = volts; 
-    char words[1]; 
-    words[1] = value; 
-
-    ssd1306_draw_string(&disp, 8, 24, 2, words);
-    //ssd1306_draw_square(&disp, 0, 0, volts, 128); 
-    ssd1306_show(&disp); 
-    ssd1306_clear(&disp);
-
+void level_display(ssd1306_t *disp, char level){ 
+    const char x = level; 
+    const char *words[] = {"2.5"};
+    ssd1306_draw_string(disp, 25, 25, 4, words[0]);
+    ssd1306_show(disp);
 }

@@ -28,9 +28,9 @@ CMakeFiles/ssd1306_test.dir/mnt/d/Electronics/pico/pico-sdk/src/rp2_common/pico_
  /mnt/d/Electronics/pico/pico-sdk/src/rp2_common/pico_printf/include/pico/printf.h \
  /mnt/d/Electronics/pico/pico-sdk/src/common/pico_base/include/pico.h \
  /mnt/d/Electronics/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
- /mnt/d/Electronics/Monitor\ Controller/Monitor-Controller-Firmware/firmware/ssd1306_test/build/generated/pico_base/pico/version.h \
+ /mnt/d/Electronics/Monitor-Controller-Firmware/Monitor-Controller/firmware/ssd1306_test/build/generated/pico_base/pico/version.h \
  /mnt/d/Electronics/pico/pico-sdk/src/common/pico_base/include/pico/config.h \
- /mnt/d/Electronics/Monitor\ Controller/Monitor-Controller-Firmware/firmware/ssd1306_test/build/generated/pico_base/pico/config_autogen.h \
+ /mnt/d/Electronics/Monitor-Controller-Firmware/Monitor-Controller/firmware/ssd1306_test/build/generated/pico_base/pico/config_autogen.h \
  /mnt/d/Electronics/pico/pico-sdk/src/boards/include/boards/pico.h \
  /mnt/d/Electronics/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
  /mnt/d/Electronics/pico/pico-sdk/src/common/pico_base/include/pico/error.h \

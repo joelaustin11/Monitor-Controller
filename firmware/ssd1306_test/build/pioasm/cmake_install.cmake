@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/d/Electronics/Monitor Controller/Monitor-Controller-Firmware/firmware/ssd1306_test/build/pioasm/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/d/Electronics/Monitor-Controller-Firmware/Monitor-Controller/firmware/ssd1306_test/build/pioasm/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

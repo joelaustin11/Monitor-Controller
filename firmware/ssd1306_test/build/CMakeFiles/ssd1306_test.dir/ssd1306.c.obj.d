@@ -1,5 +1,5 @@
 CMakeFiles/ssd1306_test.dir/ssd1306.c.obj: \
- /mnt/d/Electronics/Monitor\ Controller/Monitor-Controller-Firmware/firmware/ssd1306_test/ssd1306.c \
+ /mnt/d/Electronics/Monitor-Controller-Firmware/Monitor-Controller/firmware/ssd1306_test/ssd1306.c \
  /mnt/d/Electronics/pico/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h \
  /mnt/d/Electronics/pico/pico-sdk/src/common/pico_base/include/pico.h \
  /mnt/d/Electronics/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
@@ -11,9 +11,9 @@ CMakeFiles/ssd1306_test.dir/ssd1306.c.obj: \
  /usr/include/newlib/sys/features.h \
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
- /mnt/d/Electronics/Monitor\ Controller/Monitor-Controller-Firmware/firmware/ssd1306_test/build/generated/pico_base/pico/version.h \
+ /mnt/d/Electronics/Monitor-Controller-Firmware/Monitor-Controller/firmware/ssd1306_test/build/generated/pico_base/pico/version.h \
  /mnt/d/Electronics/pico/pico-sdk/src/common/pico_base/include/pico/config.h \
- /mnt/d/Electronics/Monitor\ Controller/Monitor-Controller-Firmware/firmware/ssd1306_test/build/generated/pico_base/pico/config_autogen.h \
+ /mnt/d/Electronics/Monitor-Controller-Firmware/Monitor-Controller/firmware/ssd1306_test/build/generated/pico_base/pico/config_autogen.h \
  /mnt/d/Electronics/pico/pico-sdk/src/boards/include/boards/pico.h \
  /mnt/d/Electronics/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
  /mnt/d/Electronics/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
@@ -67,5 +67,5 @@ CMakeFiles/ssd1306_test.dir/ssd1306.c.obj: \
  /usr/include/newlib/sys/timespec.h /usr/include/newlib/sys/_timespec.h \
  /usr/include/newlib/sys/_pthreadtypes.h /usr/include/newlib/sys/sched.h \
  /usr/include/newlib/machine/types.h /usr/include/newlib/sys/stdio.h \
- /mnt/d/Electronics/Monitor\ Controller/Monitor-Controller-Firmware/firmware/ssd1306_test/ssd1306.h \
- /mnt/d/Electronics/Monitor\ Controller/Monitor-Controller-Firmware/firmware/ssd1306_test/font.h
+ /mnt/d/Electronics/Monitor-Controller-Firmware/Monitor-Controller/firmware/ssd1306_test/ssd1306.h \
+ /mnt/d/Electronics/Monitor-Controller-Firmware/Monitor-Controller/firmware/ssd1306_test/font.h

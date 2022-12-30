@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/d/Electronics/Monitor Controller/Monitor-Controller-Firmware/firmware/ssd1306_test
+# Install script for directory: /mnt/d/Electronics/Monitor-Controller-Firmware/Monitor-Controller/firmware/ssd1306_test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/mnt/d/Electronics/Monitor Controller/Monitor-Controller-Firmware/firmware/ssd1306_test/build/pico-sdk/cmake_install.cmake")
+  include("/mnt/d/Electronics/Monitor-Controller-Firmware/Monitor-Controller/firmware/ssd1306_test/build/pico-sdk/cmake_install.cmake")
 
 endif()
 
@@ -51,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/d/Electronics/Monitor Controller/Monitor-Controller-Firmware/firmware/ssd1306_test/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/d/Electronics/Monitor-Controller-Firmware/Monitor-Controller/firmware/ssd1306_test/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

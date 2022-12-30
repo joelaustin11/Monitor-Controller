@@ -6,5 +6,10 @@
         {
             "path": "../../Resources"
         }
-    ]
+    ],
+    "settings": {
+        "files.associations": {
+            "bmspa_font.h": "c"
+        }
+    }
 }

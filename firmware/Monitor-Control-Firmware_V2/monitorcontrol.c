@@ -6,40 +6,30 @@
 #include "hardware/spi.h"
 #include "pico/time.h"
 #include "PGA2310/PGA2310.h"
-#include"VUmeter/vumeter.h"
+#include "VUmeter/vumeter.h"
+#include "VUmeter/ssd1306.h"
 
 
 #define SLEEPTIME 5000
+  
 
 
 
 int main() {
-    
+
     setup_gpios(); 
-    decibels(0);
-   
 
-    // Initialize I/O
-    stdio_init_all(); 
-    printf("tersting\ntewstint");
+    // setup display
+    ssd1306_t disp;
+    disp.external_vcc=false;
+    ssd1306_init(&disp, 128, 64, 0x3C, i2c1);
+    ssd1306_clear(&disp);
 
+    vu_setup(0); 
 
-    // Initialize the SPI functions
-    pga2310_spi_setup();
-    
     while (true) {
-        pga2310_write(128, 128); 
-        sleep_ms(3000);
-        pga2310_write(50, 50);
-        printf("tersting\ntewstint");
-    
+        int volts = vu_calc(); 
+        meter_display(&disp, volts);
     }
     
 }
-
-
-
-
-
-
-

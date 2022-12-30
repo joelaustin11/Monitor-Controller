@@ -1,4 +1,4 @@
-// Padded and checksummed version of: /mnt/d/Electronics/Monitor Controller/Monitor-Controller-Firmware/firmware/ssd1306_test/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
+// Padded and checksummed version of: /mnt/d/Electronics/Monitor-Controller-Firmware/Monitor-Controller/firmware/ssd1306_test/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
 
 .cpu cortex-m0plus
 .thumb

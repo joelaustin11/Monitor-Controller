@@ -1,4 +1,5 @@
 #include "pico/stdlib.h"
+#include "ssd1306.h"
 
 // VUmeter.c
 #define GPIO_LEFT 26 // GPIO pin for left channel adc input
@@ -14,9 +15,13 @@
 // Function Prototypes 
 
 // VUmeter.c
-int decibels(int channel); 
+int vu_setup(int channel); 
+
+int vu_calc();
 
 // display.c 
-void vu_display(int volts, char value); 
-
 void setup_gpios(void);
+
+void meter_display(ssd1306_t *disp, int level);
+
+void level_display(ssd1306_t *disp, char level);

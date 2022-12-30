@@ -75,9 +75,16 @@ def user_input():
     else: 
         print("Restoring settings...")
         
+    config = (mode, project)
+    
+    return config
+        
     
             
-def build(): 
+def build(config): 
+    config[0] = mode
+    config[1] = project
+    
     with open ('last_used.txt', 'r') as f: 
         project = f.readline()
         
@@ -102,10 +109,8 @@ def build():
     os.system("cmake ..")
     os.system("make")
 
-        
+config_values = user_input()
 
-user_input()
-
-build() 
+build(config_values) 
 
 

@@ -39,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/mnt/d/Electronics/Monitor Controller/Monitor-Controller-Firmware/firmware/ssd1306_test/build/pico-sdk/src/rp2040/hardware_regs/cmake_install.cmake")
-  include("/mnt/d/Electronics/Monitor Controller/Monitor-Controller-Firmware/firmware/ssd1306_test/build/pico-sdk/src/rp2040/hardware_structs/cmake_install.cmake")
+  include("/mnt/d/Electronics/Monitor-Controller-Firmware/Monitor-Controller/firmware/ssd1306_test/build/pico-sdk/src/rp2040/hardware_regs/cmake_install.cmake")
+  include("/mnt/d/Electronics/Monitor-Controller-Firmware/Monitor-Controller/firmware/ssd1306_test/build/pico-sdk/src/rp2040/hardware_structs/cmake_install.cmake")
 
 endif()
 
