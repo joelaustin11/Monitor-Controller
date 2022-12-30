@@ -1,2 +1,3 @@
-Makefile
+/Makefile
+firmware/ssd1306_test/build/
 build/
